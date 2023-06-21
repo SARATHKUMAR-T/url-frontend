@@ -3,9 +3,9 @@ import React from "react";
 const About = () => {
   return (
     <section className="max-w-full min-h-screen">
-      <div className="flex gap-2 justify-between p-8 max-w-7xl mx-auto ">
+      <div className="flex md:flex-row  sm:flex-col  sm:items-center sm:space-y-6  gap-2 justify-between p-8 max-w-7xl mx-auto ">
         {/* Card-1 */}
-        <div className="bg-slate-300 shadow-lg p-4 border-b-4 border-b-yellow-300 hover:scale-105 hover:border-r-4 hover:border-primary duration-300 rounded-lg ">
+        <div className="bg-slate-300   shadow-lg p-4 border-b-4 border-b-yellow-300 hover:scale-105 hover:border-r-4 hover:border-primary duration-300 rounded-lg ">
           <div className="text-xl font-bold p-2">What is URL Shortening?</div>
           <div className="max-w-xs p-4">
             <ul className="flex flex-col text-start gap-8 list-disc">
@@ -26,16 +26,16 @@ const About = () => {
               </li>
               <li>
                 <p>
-                   Our URL shortening service provides you with a
-                  reliable and secure way to shorten your URLs, making them more
-                  accessible and easier to share
+                  Our URL shortening service provides you with a reliable and
+                  secure way to shorten your URLs, making them more accessible
+                  and easier to share
                 </p>
               </li>
             </ul>
           </div>
         </div>
         {/* card 2 */}
-        <div className="bg-slate-300 p-4 max-w-sm rounded-lg border-b-4 border-b-yellow-300 hover:scale-105 hover:border-r-4 hover:border-primary duration-300 ">
+        <div className="bg-slate-300  p-4 max-w-sm rounded-lg border-b-4 border-b-yellow-300 hover:scale-105 hover:border-r-4 hover:border-primary duration-300 ">
           <div className="text-xl font-bold  p-2">Why Use a URL Shortener?</div>
           <div className="max-w-xs p-4">
             <ul className="flex flex-col gap-2 text-start list-disc">
@@ -69,9 +69,9 @@ const About = () => {
           </div>
         </div>
         {/* Card-3 */}
-        <div className="bg-slate-300 p-4 max-w-xs border-b-4 border-b-yellow-300 hover:scale-105 hover:border-r-4 hover:border-primary duration-300  rounded-lg ">
+        <div className="bg-slate-300  p-4 max-w-xs border-b-4 border-b-yellow-300 hover:scale-105 hover:border-r-4 hover:border-primary duration-300  rounded-lg ">
           <div className="text-xl font-bold  p-2">
-            Ensuring Reliable  Shortened Links
+            Ensuring Reliable Shortened Links
           </div>
           <div className="max-w-xs p-4">
             <ul className="flex flex-col gap-2 text-start list-disc">
