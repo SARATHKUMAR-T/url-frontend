@@ -7,9 +7,12 @@ function Hero() {
   const [shorturl, setShorturl] = useState();
   // redirection logic
   const actionHandler = async () => {
-    const final = await fetch(`http://localhost:9000/${shorturl}`, {
-      method: "GET",
-    });
+    const final = await fetch(
+      `https://url-shortner-backend-lake.vercel.app/${shorturl}`,
+      {
+        method: "GET",
+      }
+    );
     const result = await final.text();
     window.open(`${result}`, "_blank");
   };
@@ -19,13 +22,16 @@ function Hero() {
     const full = {
       fullUrl,
     };
-    const data = await fetch("http://localhost:9000/short", {
-      method: "POST",
-      body: JSON.stringify(full),
-      headers: {
-        "content-type": "application/json",
-      },
-    });
+    const data = await fetch(
+      "https://url-shortner-backend-lake.vercel.app/short",
+      {
+        method: "POST",
+        body: JSON.stringify(full),
+        headers: {
+          "content-type": "application/json",
+        },
+      }
+    );
 
     const result = await data.json();
     setShorturl(result.full.short);

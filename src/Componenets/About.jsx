@@ -3,9 +3,9 @@ import React from "react";
 const About = () => {
   return (
     <section className="max-w-full min-h-screen">
-      <div className="flex md:flex-row  sm:flex-col  sm:items-center sm:space-y-6  gap-2 justify-between p-8 max-w-7xl mx-auto ">
+      <div className="flex md:flex-row md:items-stretch sm:flex-col  sm:items-center sm:space-y-6  gap-2 justify-between p-8 max-w-7xl mx-auto ">
         {/* Card-1 */}
-        <div className="bg-slate-300   shadow-lg p-4 border-b-4 border-b-yellow-300 hover:scale-105 hover:border-r-4 hover:border-primary duration-300 rounded-lg ">
+        <div className="bg-slate-300 max-w-sm   shadow-lg p-4 border-b-4 border-b-yellow-300 hover:scale-105 hover:border-r-4 hover:border-primary duration-300 rounded-lg ">
           <div className="text-xl font-bold p-2">What is URL Shortening?</div>
           <div className="max-w-xs p-4">
             <ul className="flex flex-col text-start gap-8 list-disc">
