@@ -1,11 +1,12 @@
 import "./App.css";
+import About from "./Componenets/About";
 import Hero from "./Componenets/hero";
-import {Routes,Route} from "react-router-dom"
 
 function App() {
   return (
-    <div className="App text-nunito">
-      <Hero/>
+    <div className="App text-nunito scroll-smooth">
+      <Hero />
+      <About />
     </div>
   );
 }
