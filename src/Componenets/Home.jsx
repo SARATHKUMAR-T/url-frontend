@@ -71,7 +71,7 @@ function Home() {
               type="text"
               value={fullUrl}
               onChange={e => setFullUrl(e.target.value)}
-              className="bg-slate-300 text-black outline-none w-96 px-2 rounded-lg   "
+              className="bg-slate-300 text-black outline-none w-96 px-2 rounded-lg text-center   "
             />
             <button
               className="  bg-primary rounded-lg px-12 py-3 hover:scale-110 duration-300"
@@ -81,7 +81,7 @@ function Home() {
             </button>
           </div>
           <div className="flex mx-auto text-white gap-6 ">
-            <div className="bg-slate-300 text-black px-2 cursor-text h-12 w-96 rounded-lg text-center">
+            <div className="bg-slate-300 text-black px-2 cursor-text h-12 w-96 rounded-lg py-3">
               {shorturl}
             </div>
             <button
